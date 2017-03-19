@@ -1,0 +1,41 @@
+
+#Ignore thumbnails created by Windows
+Thumbs.db
+#Ignore files built by Visual Studio
+*.obj
+*.exe
+*.pdb
+*.user
+*.aps
+*.pch
+*.vspscc
+*_i.c
+*_p.c
+*.ncb
+*.suo
+*.tlb
+*.tlh
+*.bak
+*.cache
+*.ilk
+*.log
+[Bb]in
+[Dd]ebug*/
+*.lib
+*.sbr
+obj/
+[Rr]elease*/
+_ReSharper*/
+[Tt]est[Rr]esult*
+.vs/
+#Nuget packages folder
+packages/
+Engine.VC.VC.opendb
+Output/Intermediate/vc140.idb
+Output/Intermediate/Engine.tlog/CL.command.1.tlog
+Output/Intermediate/Engine.tlog/CL.read.1.tlog
+Output/Intermediate/Engine.tlog/CL.write.1.tlog
+Output/Intermediate/Engine.tlog/Engine.lastbuildstate
+Output/Intermediate/Engine.tlog/link.command.1.tlog
+Output/Intermediate/Engine.tlog/link.read.1.tlog
+Output/Intermediate/Engine.tlog/link.write.1.tlog
