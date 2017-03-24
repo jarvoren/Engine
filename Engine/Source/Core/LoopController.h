@@ -7,6 +7,6 @@ public:
 	void run();
 	~LoopController();
 private:
-	State _currentState;
+	State* _currentState;
 };
 

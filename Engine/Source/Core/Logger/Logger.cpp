@@ -11,9 +11,9 @@ Logger& Logger::GetInstance()
 
 void Logger::LogMsg(std::string msg, Severity severityLevel)
 {
-	msg = std::string(getTextForEnum(severityLevel)) + msg;
+	msg = msg + "Severity: " + std::to_string(severityLevel);
 	_temporaryList.push_back(msg);
-	if (_temporaryList.size > 100)
+	if (_temporaryList.size() > 100)
 		DumpListToFile();
 
 }
@@ -29,7 +29,7 @@ void Logger::DumpListToFile()
 		}
 		fs.close();
 	}
-	catch () 
+	catch (...) 
 	{
 	}
 
